@@ -1,0 +1,17 @@
+../DSmartDatasets/test_img/dsmart_bg_test/bg_test1.png
+../DSmartDatasets/test_img/dsmart_bg_test/bg_test2.png
+../DSmartDatasets/test_img/dsmart_bg_test/bg_test3.png
+../DSmartDatasets/test_img/dsmart_bg_test/bg_test4.png
+../DSmartDatasets/test_img/dsmart_bg_test/bg_test5.png
+../DSmartDatasets/test_img/dsmart_bg_test/bg_test6.png
+../DSmartDatasets/test_img/dsmart_bg_test/bg_test7.png
+../DSmartDatasets/test_img/dsmart_bg_test/bg_test8.png
+../DSmartDatasets/test_img/dsmart_bg_test/bg_test9.png
+../DSmartDatasets/test_img/dsmart_bg_test/bg_test10.png
+../DSmartDatasets/test_img/dsmart_bg_test/bg_test11.png
+../DSmartDatasets/test_img/dsmart_bg_test/bg_test12.png
+../DSmartDatasets/test_img/dsmart_bg_test/bg_test13.png
+../DSmartDatasets/test_img/dsmart_bg_test/bg_test14.png
+../DSmartDatasets/test_img/dsmart_bg_test/bg_test15.png
+../DSmartDatasets/test_img/dsmart_bg_test/bg_test20.png
+../DSmartDatasets/230420/img/00000000.png

@@ -1,0 +1,55 @@
+# train
+python train.py --data DSmart.yaml --epochs 50 --weights '' --cfg yolov5x.yaml  --batch-size 8
+
+# test
+python detect.py --weights ./runs/train/x_crop_mix_50e_8b/weights/best.pt --source ./data/DSmart_test.txt
+
+python detect.py --weights ./runs/train/x_cropped_50e_32b/weights/best.pt --source ./data/DSmart_test.txt
+
+python detect.py --weights ./runs/train/x_50e_8b/weights/best.pt --source 0
+python detect.py --weights ./runs/train/x_cropped_50e_32b/weights/best.pt --source 0
+
+python DSMartDetection.py --weights ./runs/train/x_cropped_50e_32b/weights/best.pt --source 0
+
+python detect.py --weights ./runs/train/model_x_0424_f/weights/best.pt --source 0
+
+python detect.py --weights ./runs/train/model_x6/weights/best.pt --source ./data/videos/test0.mp4 --view-img --line-thickness 1
+python detect.py --weights ./runs/train/model_x_0517_1/weights/best.pt --source ./data/videos/test0.mp4 --line-thickness 1 --agnostic-nms --iou-thres 0.2
+
+
+python detect.py --weights ./runs/train/model_x6/weights/best.pt --source 0 --line-thickness 1
+python detect.py --weights ./runs/train/model2_x/weights/best.pt --source 0 --line-thickness 1
+
+python detect.py --weights ./runs/train/final/best.pt --source 0
+
+
+# tflite
+python detect.py --weights ./runs/train/model_x_0517_1/weights/best-int8.tflite --source ./data/videos/test0.mp4 --imgsz 320 --data ./data/DSmart.yaml
+python detect.py --weights ./runs/train/model_x_0517_1/weights/best-int8.tflite --source ../DSmartDatasets/test_img/final_test/00000000.png --imgsz 320 --data ./data/DSmart.yaml --agnostic-nms --iou-thres 0.2
+
+# pt
+python detect.py --weights ./runs/train/model_x_0517_1/weights/best.pt --source 0 --agnostic-nms --iou-thres 0.2
+
+python detect.py --weights ./runs/train/model_x_0517_1/weights/best.pt --source ./data/videos/test0.mp4 --view-img 
+
+python detect.py --weights ./runs/train/model_x_0517_1/weights/best.pt --source ./data/videos/test0.mp4 --view-img --agnostic-nms --iou-thres 0.2
+
+python detect.py --weights ./runs/train/model_x_0517_1/weights/best.pt --source ./data/videos/test0.mp4 --agnostic-nms --iou-thres 0.2
+
+
+
+
+
+python detect.py --weights ./runs/train/model_x_0424_f/weights/best.pt --source ./data/videos/test4.mp4 --view-img --iou-thres 0.0001 --conf-thres 0.5
+
+python DSMartDetection.py --weights ./runs/train/x_100e_8b/best.pt --source 0
+
+python DSMartDetection.py --weights ./runs/train/x_cropped_50e_32b/weights/best.pt --source ./data/videos/mart1.mp4 --view-img
+
+python DSMartDetection.py --weights ./runs/train/x_100e_8b/best.pt --source ./data/videos/test2.mp4 --view-img
+
+python DSMartDetection.py --weights ./runs/train/x_100e_8b/best.pt --source ./data/videos/mart2.mp4 --view-img
+
+python detect.py --weights ./runs/train/x_100e_8b/best.pt --source ./data/DSmart_bg_test.txt
+
+python DSMartDetection.py --weights ./runs/train/x_100e_8b/best.pt --source ./data/videos/mart2.mp4 --view-img
